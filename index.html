@@ -15,27 +15,112 @@
 <body>
     <header class="position-fixed top-0 left-0 w-100 py-2 bg-light f_d-debug">
         <div class="header-content w-100 d-flex align-content-center align-items-center justify-content-center ">
-            <div class="logo ps-2 bg-white"><a href="#main"><img src="img/logo.svg" alt="Logo"></a></div>
-            <div class="search bg-white"><input type="search" placeholder="&#128269; Search" class="form-control" id="search-bar"></div>
-            <div class="menu ps-2 bg-white">menu</div>
+            <div class="logo ps-2 bg-white">
+                <a id="first_logo" href="#main">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
+                <a href="#" id="mobile_logo" class="img-fluid">
+                        <img src="img/mobile-logo.png" style="height: 50px; width: 50px;" alt="Logo-mobile">
+                </a>
+            </div>
+            <div class="search bg-white"><input type="search" placeholder="&#128269; Search" class="form-control"
+                    id="search-bar"></div>
+            <div class="menu ps-2 bg-white d-flex align-content-center justify-content-around position-relative ">
+                <div>
+                    <a href="#">
+                        <i class="fa-solid fa-list text-black"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-question text-black "></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical text-black"></i>
+                    </a>
+                </div>
+                <div class="menu_slide">
+                    <a href="#"><i class="fa-solid fa-bell" style="color: #FFD43B;"></i>
+                    </a>
+                    <ul>
+                        <li><a class="menu_vertical border-black" href="#">Profilo</a></li>
+                        <li><a class="menu_vertical border-black" href="#">Fatturazione</a></li>
+                        <li><a class="menu_vertical border-black" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
-        <div class="wrapper vh-100 w-100 d-flex">
-            <nav>ciao</nav>
-            <main id="main" class="f_d-debug">
-                <div class="container-fluid h-100 overflow-y-auto">
-                  
+    <div class="wrapper vh-100 w-100 d-flex">
+        <nav class="d-flex flex-column justify-content-between align-items-center ">
+            <div class="nav_top">
+                <div class="d-flex pt-4">
+                    <div class="font_nav">
+                        <a href="#main" class="text-white text-decoration-none">
+                            <i class="fa-solid fa-house text-white"></i>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="#main" class="text-white text-decoration-none">
+                            Home
+                        </a>
+                    </div>
                 </div>
-                
+                <div class="d-flex justify-content-center align-content-center py-4 ">
+                    <div class="font_nav">
+                        <a href="#main" class="text-white text-decoration-none">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="#main" class="text-white text-decoration-none">
+                            Stats
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex ">
+                    <div class="font_nav">
+                        <a href="#main" class="text-white text-decoration-none">
+                            <i class="fa-solid fa-signal"></i>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="#main" class="text-white text-decoration-none">
+                            Signals
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_bottom pb-4">
+                <div class="d-flex">
+                    <div class="font_nav">
+                        <a href="#main" class="text-white text-decoration-none">
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="#main" class="text-white text-decoration-none">
+                            Admin
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main id="main" class="f_d-debug">
+            <div class="container-fluid h-100 overflow-y-auto">
+
+            </div>
 
 
 
 
 
 
-            </main>
-        </div>
-    
+
+        </main>
+    </div>
+
 
 </body>
 

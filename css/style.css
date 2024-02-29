@@ -9,6 +9,10 @@
 	--color-nav: #142b40;
 }
 
+li {
+    list-style-type: none;
+}
+
 nav {
     width: 200px;
     height: 100%;
@@ -30,7 +34,16 @@ header {
 
 .logo, .menu  {
     width: 15%;
-    background-color: red;
+}
+
+#first_logo {
+    display: block;
+}
+
+#mobile_logo {
+    width: 20px;
+    height: 20px;
+    display: none;
 }
 
 .search {
@@ -40,3 +53,93 @@ header {
 #search-bar {
     background-color: lightgray;
 }
+
+header div >ul {
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    width: 150px;
+    padding-top: 10px;
+    height: 100px;
+}
+
+.menu_vertical {
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    border: 1px solid black;
+    display: none;
+    background-color: var(--color-hero);
+}
+
+.menu_slide:hover .menu_vertical {
+    display: block;
+}
+
+.menu_slide ul li > a:hover {
+    color: yellowgreen;
+}
+
+
+/* media query */
+
+@media screen and (max-width: 768px){
+
+    /* header */
+
+    #first_logo {
+        display: none;
+    }
+
+    #mobile_logo {
+        display: block;
+    }
+
+    .logo, .menu  {
+        width: 10%;
+    }
+
+    header div > .logo {
+        display: flex;
+        justify-content: start;
+        margin-bottom: 30px;
+    }
+
+    .search {
+        width: 80%;
+    }
+
+    .fa-list, .fa-circle-question, .fa-ellipsis-vertical {
+        display: none;
+    }
+
+    .fa-bell {
+        margin-right: 30px;
+    }
+
+    header > div {
+        background-color: white;
+    }
+
+    header div >ul {
+        left: -105px;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .search {
+        padding: 0 10px 0 10px;
+    }
+
+    header div >ul {
+        left: -130px;
+    }
+
+    
+}
+
+
+
