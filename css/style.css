@@ -1,0 +1,42 @@
+
+.f_d-debug {
+    border: 1px solid red;
+}
+
+:root {
+	--color-hero: #1b72e8;
+	--color-main: #f8f9fa;
+	--color-nav: #142b40;
+}
+
+nav {
+    width: 200px;
+    height: 100%;
+    background-color: var(--color-nav);
+    padding-top: 50px;
+}
+
+#main {
+    height: 100%;
+    width: calc(100% - 200px);
+    padding-top: 50px;
+    background-color: var(--color-main);
+}
+/* header */
+
+header {
+    background-color: var(--color-main);
+}
+
+.logo, .menu  {
+    width: 15%;
+    background-color: red;
+}
+
+.search {
+    width: 70%;
+}
+
+#search-bar {
+    background-color: lightgray;
+}
