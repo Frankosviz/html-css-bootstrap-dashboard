@@ -128,10 +128,25 @@ header div a > .fa-solid:hover {
     font-size: 14px;
 }
 
-#f-d-button {
+#main div button >.fa-plus{
     width: 40px;
     height: 40px;
+    line-height: 40px;
 }
+
+.f_d_padding {
+    padding-bottom: 75px;
+
+}
+
+#offcanvasRight {
+    width: 575px;
+}
+
+.ghost {
+    display: none;
+}
+
 
 
 
@@ -207,6 +222,33 @@ header div a > .fa-solid:hover {
     #nav-bar .pb-2 a > i:hover {
         color: rgba(201, 194, 194, 0.459);
     }
+
+    /* main */
+
+    .disappear {
+        display: none;
+    }
+
+    .ghost {
+        display: block;
+    }
+
+    #m-query  {
+        width: 33% !important;
+        padding-left: 10px !important;
+    }
+
+    #m_query {
+        width: 33% !important;
+    }
+
+    #mquery {
+        width: 33% !important;
+
+    }
+
+
+
 
 }
 

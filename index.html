@@ -45,7 +45,8 @@
                     </a>
                     <ul>
                         <li><a class="menu_vertical border-black text-uppercase fw-bolder " href="#">Profilo</a></li>
-                        <li><a class="menu_vertical border-black text-uppercase fw-bolder " href="#">Fatturazione</a></li>
+                        <li><a class="menu_vertical border-black text-uppercase fw-bolder " href="#">Fatturazione</a>
+                        </li>
                         <li><a class="menu_vertical border-black text-uppercase fw-bolder " href="#">Logout</a></li>
                     </ul>
                 </div>
@@ -110,38 +111,48 @@
         <main id="main" class="f_d-debug">
             <div class="h-100 overflow-y-auto f_d-debug">
                 <div class="nav-orizzontal d-flex f_d-debug">
-                    <div class="w-50 d-flex flex-column justify-content-center ps-5  ">
-                            <div class="d-flex gap-1 mb-3 ">
-                                <h1 class="text-white fs-2 ">Boolean</h1>
-                                <button type="button" class="btn btn-primary">Piano Blaze</button>
-                            </div>
-                            <div class="d-flex gap-1 mt-3 ">
-                                <button type="button" class="btn btn-primary">3 App</button>
-                                <a href="#main"><i class="fa-solid fa-angles-right text-white "></i></a>
-                                <button type="button" class="btn btn-primary">Boolean Mobile App</button>
-                                <button type="button" class="btn btn-primary">Boolean Web App</button>
-                                <button type="button" class="btn btn-primary">Boolean Blog App</button>
-                            </div>
+                    <div #id="m-query" class="w-50 d-flex flex-column justify-content-center ps-5">
+                        <div class="d-flex gap-1 mb-3 ">
+                            <h1 class="text-white fs-2 ">Boolean</h1>
+                            <button type="button" class="btn btn-primary">Piano Blaze</button>
+                        </div>
+                        <div class="d-flex gap-1 mt-3 ">
+                            <button type="button" class="btn btn-primary">3 App</button>
+                            <a href="#main"><i class="fa-solid fa-angles-right text-white "></i></a>
+                            <button type="button" class="btn btn-primary ghost">+</button>
+                            <button type="button" class="btn btn-primary disappear">Boolean Mobile App</button>
+                            <button type="button" class="btn btn-primary disappear">Boolean Web App</button>
+                            <button type="button" class="btn btn-primary disappear">Boolean Blog App</button>
+                        </div>
                     </div>
-                    <div class="w-25 text-white d-flex flex-column justify-content-center ">
+                    <div id="m_query" class="w-25 text-white d-flex flex-column justify-content-center">
                         <h5>Studenti Online negli ultimi 30 minuti</h5>
                         <p class="fs-1 ">125</p>
                     </div>
-                    <div class="w-25 text-center d-flex align-items-center justify-content-start gap-3  pb-5 ">
-                        <p class="me-4 ">
-                            <h5 class="text-white ">Nuovo studente</h5>
-                        </p>
-                        <p>
-                            <button type="button" id="f-d-button" class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
-                        </p>
+                    <div id="mquery" class="f_d_padding w-25 text-center d-flex align-items-center justify-content-start gap-3">
+                        <h5 class="me-4 text-white ">Nuovo studente</h5>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus fs-3"></i></button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eveniet maiores saepe rerum hic ad et iure tempore. In, voluptatibus.
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="d-flex">
                     <div class="container-main-left f_d-debug">
 
-                   </div>
+                    </div>
                     <div class="container-main-right f_d-debug">
-                        
+
                     </div>
                 </div>
 
@@ -157,7 +168,12 @@
         </main>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
