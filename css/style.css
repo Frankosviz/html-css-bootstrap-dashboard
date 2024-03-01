@@ -16,6 +16,7 @@ li {
 nav {
     width: 200px;
     height: 100%;
+    background-image: url(/img/sidebar-bg.png);
     background-color: var(--color-nav);
     padding-top: 50px;
 }
@@ -38,6 +39,10 @@ header {
 
 #first_logo {
     display: block;
+    position: relative;
+    animation-name: logo-move;
+    animation-duration: 2s;
+    animation-delay: 0s;
 }
 
 #mobile_logo {
@@ -54,10 +59,14 @@ header {
     background-color: lightgray;
 }
 
+header div a > .fa-solid {
+    color: gray;
+}
+
 header div >ul {
     position: absolute;
     top: 30px;
-    left: 80px;
+    left: 105px;
     width: 150px;
     padding-top: 10px;
     height: 100px;
@@ -69,9 +78,11 @@ header div >ul {
     border-radius: 5px;
     width: 150px;
     height: 40px;
-    border: 1px solid black;
+    border: 1px solid gray;
     display: none;
-    background-color: var(--color-hero);
+    background-color: lightgray;
+    text-align: center;
+    line-height: 40px;
 }
 
 .menu_slide:hover .menu_vertical {
@@ -79,8 +90,20 @@ header div >ul {
 }
 
 .menu_slide ul li > a:hover {
-    color: yellowgreen;
+    color: var(--color-hero);
 }
+
+header div a > .fa-solid:hover {
+    color: #FFD43B;
+}
+
+/* nav-bar */
+
+#nav-bar .pb-2:hover {
+    background-color: rgba(201, 194, 194, 0.459);
+}
+
+
 
 
 /* media query */
@@ -127,6 +150,28 @@ header div >ul {
         left: -105px;
     }
 
+    /* nav_bar */
+
+    #nav-bar .pb-2 div:last-child {
+        display: none;
+    }
+
+    nav {
+        width: 60px;
+    }
+
+    #main {
+        width: calc(100% - 60px);
+    }
+
+    #nav-bar .pb-2:hover {
+        background-color: transparent;
+    }
+
+    #nav-bar .pb-2 a > i:hover {
+        color: rgba(201, 194, 194, 0.459);
+    }
+
 }
 
 @media screen and (max-width: 500px){
@@ -143,3 +188,12 @@ header div >ul {
 
 
 
+/* animations */
+
+@keyframes logo-move {
+    0%   {background-color: var(--color-main); left:0px; top:0px;}
+    25%  {background-color:lightgray; left:200px; top:0px;}
+    50%  {background-color: var(--color-hero); left:200px; top:200px;}
+    75%  {background-color:var(--color-nav); left:0px; top:200px;}
+    100% {background-color:transparent; left:0px; top:0px;}
+  }
