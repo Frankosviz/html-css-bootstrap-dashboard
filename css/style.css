@@ -91,6 +91,7 @@ header div >ul {
 
 .menu_slide ul li > a:hover {
     color: var(--color-hero);
+    display: block;
 }
 
 header div a > .fa-solid:hover {
@@ -103,10 +104,45 @@ header div a > .fa-solid:hover {
     background-color: rgba(201, 194, 194, 0.459);
 }
 
+/* main */
+
+.nav-orizzontal {
+    height: 200px;
+    width: 100%;
+    background-color: var(--color-hero);
+}
+
+.container-main-left {
+    width: 60%;
+    height: calc(100% - 100px);
+}
+
+.container-main-right {
+    width: 40%;
+    height: calc(100% - 100px);
+}
+
+#main div button {
+    background-color: rgba(61, 61, 112, 0.432);
+    padding: 0 6px 0 6px;
+    font-size: 14px;
+}
+
+#f-d-button {
+    width: 40px;
+    height: 40px;
+}
 
 
 
 /* media query */
+@media screen and (max-width: 1200px){
+
+}
+
+@media screen and (max-width: 992px){
+
+}
 
 @media screen and (max-width: 768px){
 
@@ -174,7 +210,7 @@ header div a > .fa-solid:hover {
 
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 576px){
     .search {
         padding: 0 10px 0 10px;
     }
