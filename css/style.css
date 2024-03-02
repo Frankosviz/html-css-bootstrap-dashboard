@@ -128,6 +128,12 @@ header div a > .fa-solid:hover {
     font-size: 14px;
 }
 
+#btn-sick {
+    margin-top: 10px;
+    width: 90px;
+    height: 30px;
+}
+
 #main div button >.fa-plus{
     width: 40px;
     height: 40px;
@@ -198,7 +204,7 @@ header div a > .fa-solid:hover {
     }
 
     header div >ul {
-        left: -105px;
+        left: -165px;
     }
 
     /* nav_bar */
@@ -233,23 +239,6 @@ header div a > .fa-solid:hover {
         display: block;
     }
 
-    #m-query  {
-        width: 33% !important;
-        padding-left: 10px !important;
-    }
-
-    #m_query {
-        width: 33% !important;
-    }
-
-    #mquery {
-        width: 33% !important;
-
-    }
-
-
-
-
 }
 
 @media screen and (max-width: 576px){
@@ -257,11 +246,42 @@ header div a > .fa-solid:hover {
         padding: 0 10px 0 10px;
     }
 
+    .nav-orizzontal {
+        height: 300px;
+    }
+
     header div >ul {
         left: -130px;
     }
 
-    
+    #nav-orizzontal {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 450px;
+    }
+
+    #buttons-row, #student-row, #new-student {
+        width: 100%;
+    }
+
+    #student-row, #new-student {
+        padding-left: 3rem;
+    }
+
+    #student-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #buttons-row{
+        padding-bottom: 20px;
+
+    }
+
+    .f_d_padding {
+        padding-bottom: 35px;
+    }
+
 }
 
 
