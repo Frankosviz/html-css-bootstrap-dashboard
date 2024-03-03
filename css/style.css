@@ -122,9 +122,9 @@ header div a > .fa-solid:hover {
     height: calc(100% - 100px);
 }
 
-#main div button {
+#nav-orizzontal div button {
     background-color: rgba(61, 61, 112, 0.432);
-    padding: 0 6px 0 6px;
+    padding: 0 5px 0 5px;
     font-size: 14px;
 }
 
@@ -153,15 +153,111 @@ header div a > .fa-solid:hover {
     display: none;
 }
 
+/* main-tab */
+
+.img-tab {
+    width: 30px;
+    height: 30px;
+}
+
+
+.w-minor {
+    padding-left: 10px;
+    height: 50px;
+}
+
+.container-table {
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.border-fran {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.border-fran-bottom {
+    border-bottom: 1px solid lightgray;
+}
+
+.bg-fran {
+    background-color: var(--color-main);
+}
+
+table tr {
+    border-bottom: 1px solid lightgray;
+}
+
+table tr td > button {
+    width: 70px;
+}
+
+.bord-none{
+    border-bottom: none;
+}
+
+
+/* faq */
 
 
 
 /* media query */
 @media screen and (max-width: 1200px){
 
+    header div >ul {
+        left: -80px;
+    }
+
+    .container-main-left {
+        width: 100%;
+    }
+
+    #container-father-left-right {
+        flex-wrap: wrap;
+    }
+
+    #faq {
+        margin-bottom: 50px;
+    }
+
+    .container-main-right {
+        width: 100%;
+    }
+
+    #container-checkbox {
+        margin-left: 0;
+    }
+
 }
 
 @media screen and (max-width: 992px){
+    /* header */
+
+    header div >ul {
+        left: -110px;
+    }
+
+    .container-main-left {
+        width: 100%;
+    }
+
+    #container-father-left-right {
+        flex-wrap: wrap;
+    }
+
+    #faq {
+        margin-bottom: 50px;
+    }
+
+    .container-main-right {
+        width: 100%;
+    }
+
+    #container-checkbox {
+        margin-left: 0;
+    }
+
 
 }
 
@@ -204,7 +300,15 @@ header div a > .fa-solid:hover {
     }
 
     header div >ul {
-        left: -165px;
+        left: -180px;
+    }
+
+    #student-row, #new-student {
+        padding-top: 50px;
+    }
+
+    #new-student {
+        padding-bottom: 87px;
     }
 
     /* nav_bar */
@@ -238,6 +342,20 @@ header div a > .fa-solid:hover {
     .ghost {
         display: block;
     }
+
+    #container-father-left-right {
+        flex-wrap: wrap;
+    }
+
+    #faq {
+        margin-bottom: 50px;
+    }
+
+    .container-main-right {
+        width: 100%;
+    }
+    
+
 
 }
 
@@ -280,6 +398,10 @@ header div a > .fa-solid:hover {
 
     .f_d_padding {
         padding-bottom: 35px;
+    }
+
+    .disappear {
+        display: none;
     }
 
 }
