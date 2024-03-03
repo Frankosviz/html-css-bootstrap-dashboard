@@ -229,6 +229,10 @@ table tr td > button {
         margin-left: 0;
     }
 
+    #nav-orizzontal div button {
+        font-size: 12px;
+    }
+
 }
 
 @media screen and (max-width: 992px){
@@ -256,6 +260,15 @@ table tr td > button {
 
     #container-checkbox {
         margin-left: 0;
+    }
+
+    #nav-orizzontal div button {
+        font-size: 9px;
+    }
+
+    .size-button-mq {
+        width: 50px;
+        font-size: 11px;
     }
 
 
@@ -354,6 +367,10 @@ table tr td > button {
     .container-main-right {
         width: 100%;
     }
+
+    .w-minor {
+        width: 70%;
+    }
     
 
 
@@ -375,7 +392,7 @@ table tr td > button {
     #nav-orizzontal {
         display: flex;
         flex-direction: column-reverse;
-        height: 450px;
+        height: 350px;
     }
 
     #buttons-row, #student-row, #new-student {
@@ -384,6 +401,8 @@ table tr td > button {
 
     #student-row, #new-student {
         padding-left: 3rem;
+        padding-bottom: 0;
+        width: 100% !important;
     }
 
     #student-row {
@@ -393,7 +412,6 @@ table tr td > button {
 
     #buttons-row{
         padding-bottom: 20px;
-
     }
 
     .f_d_padding {

@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="position-fixed top-0 left-0 w-100 py-2 bg-light f_d-debug">
+    <header class="position-fixed top-0 left-0 w-100 py-2 bg-light">
         <div class="header-content w-100 d-flex align-content-center align-items-center justify-content-center ">
             <div class="logo ps-2 bg-white">
                 <a id="first_logo" href="#main">
@@ -63,7 +63,7 @@
                         </a>
                     </div>
                     <div class="ps-2">
-                        <a href="#main" class="text-white text-decoration-none">
+                        <a href="#nav-orizzontal" class="text-white text-decoration-none">
                             Home
                         </a>
                     </div>
@@ -108,27 +108,27 @@
                 </div>
             </div>
         </nav>
-        <main id="main" class="f_d-debug">
-            <div class="h-100 overflow-y-auto f_d-debug">
-                <div id="nav-orizzontal" class="nav-orizzontal d-flex f_d-debug">
-                    <div id="buttons-row" class="w-50 d-flex flex-column justify-content-center ps-5">
-                        <div class="d-flex gap-1 mb-3 ">
-                            <h1 class="text-white fs-2 ">Boolean</h1>
-                            <button type="button" id="btn-sick" class="btn btn-primary">Piano Blaze</button>
+        <main id="main">
+            <div class="h-100 overflow-y-auto">
+                <div id="nav-orizzontal" class="nav-orizzontal d-flex">
+                        <div id="buttons-row" class="w-50 d-flex flex-column justify-content-center ps-5">
+                            <div class="d-flex gap-1 mb-3 ">
+                                <h1 class="text-white fs-2 ">Boolean</h1>
+                                <button type="button" id="btn-sick" class="btn btn-primary">Piano Blaze</button>
+                            </div>
+                            <div class="d-flex gap-1 mt-3 ">
+                                <button type="button" class="btn btn-primary">3 App</button>
+                                <a href="#main"><i class="fa-solid fa-angles-right text-white "></i></a>
+                                <button type="button" class="btn btn-primary ghost">+</button>
+                                <button type="button" class="btn btn-primary disappear">Boolean Mobile App</button>
+                                <button type="button" class="btn btn-primary disappear">Boolean Web App</button>
+                                <button type="button" class="btn btn-primary disappear">Boolean Blog App</button>
+                            </div>
                         </div>
-                        <div class="d-flex gap-1 mt-3 ">
-                            <button type="button" class="btn btn-primary">3 App</button>
-                            <a href="#main"><i class="fa-solid fa-angles-right text-white "></i></a>
-                            <button type="button" class="btn btn-primary ghost">+</button>
-                            <button type="button" class="btn btn-primary disappear">Boolean Mobile App</button>
-                            <button type="button" class="btn btn-primary disappear">Boolean Web App</button>
-                            <button type="button" class="btn btn-primary disappear">Boolean Blog App</button>
+                        <div id="student-row" class="w-25 text-white d-flex flex-column justify-content-center">
+                            <h5>Studenti Online negli ultimi 30 minuti</h5>
+                            <p class="fs-1 ">125</p>
                         </div>
-                    </div>
-                    <div id="student-row" class="w-25 text-white d-flex flex-column justify-content-center">
-                        <h5>Studenti Online negli ultimi 30 minuti</h5>
-                        <p class="fs-1 ">125</p>
-                    </div>
                     <div id="new-student"
                         class="f_d_padding w-25 text-center d-flex align-items-center justify-content-start gap-3">
                         <h5 class="me-4 text-white ">Nuovo studente</h5>
@@ -188,7 +188,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="container-father-left-right" class="d-flex">
+                <div id="container-father-left-right" class="d-flex p-3">
                     <div class="container-main-left">
                         <div class="container-table border-fran mb-5 ">
                             <div class=" bg-fran border-fran-bottom">
@@ -208,7 +208,8 @@
                                     </td>
                                     <td class="disappear">15 Febbraio 2021</td>
                                     <td class="disappear">20%</td>
-                                    <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                    <td><button type="button"
+                                            class="btn btn-success btn-sm size-button-mq">Done</button></td>
                                     <td>
                                         <span><button type="button"
                                                 class="btn btn-success btn-sm bg-white text-black "><i
@@ -224,7 +225,8 @@
                                     </td>
                                     <td class="disappear">15 Febbraio 2021</td>
                                     <td class="disappear">20%</td>
-                                    <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                    <td><button type="button"
+                                            class="btn btn-success btn-sm size-button-mq">Done</button></td>
                                     <td>
                                         <span><button type="button"
                                                 class="btn btn-success btn-sm bg-white text-black "><i
@@ -240,7 +242,8 @@
                                     </td>
                                     <td class="disappear">15 Febbraio 2021</td>
                                     <td class="disappear">20%</td>
-                                    <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                    <td><button type="button"
+                                            class="btn btn-success btn-sm size-button-mq">Done</button></td>
                                     <td>
                                         <span><button type="button"
                                                 class="btn btn-success btn-sm bg-white text-black "><i
@@ -256,7 +259,8 @@
                                     </td>
                                     <td class="disappear">15 Febbraio 2021</td>
                                     <td class="disappear">20%</td>
-                                    <td><button type="button" class="btn btn-danger btn-sm">Failed</button></td>
+                                    <td><button type="button"
+                                            class="btn btn-danger btn-sm size-button-mq">Failed</button></td>
                                     <td>
                                         <span><button type="button"
                                                 class="btn btn-success btn-sm bg-white text-black "><i
@@ -272,7 +276,8 @@
                                     </td>
                                     <td class="disappear">15 Febbraio 2021</td>
                                     <td class="disappear">20%</td>
-                                    <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                    <td><button type="button"
+                                            class="btn btn-success btn-sm size-button-mq">Done</button></td>
                                     <td>
                                         <span><button type="button"
                                                 class="btn btn-success btn-sm bg-white text-black "><i
@@ -288,7 +293,8 @@
                                     </td>
                                     <td class="disappear">15 Febbraio 2021</td>
                                     <td class="disappear">30%</td>
-                                    <td><button type="button" class="btn btn-danger btn-sm">Failed</button></td>
+                                    <td><button type="button"
+                                            class="btn btn-danger btn-sm size-button-mq">Failed</button></td>
                                     <td>
                                         <span><button type="button"
                                                 class="btn btn-success btn-sm bg-white text-black "><i
@@ -304,7 +310,8 @@
                                     </td>
                                     <td class="disappear">15 Febbraio 2021</td>
                                     <td class="disappear">20%</td>
-                                    <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                    <td><button type="button"
+                                            class="btn btn-success btn-sm size-button-mq">Done</button></td>
                                     <td>
                                         <span><button type="button"
                                                 class="btn btn-success btn-sm bg-white text-black "><i
@@ -320,7 +327,8 @@
                                     </td>
                                     <td class="disappear">15 Febbraio 2021</td>
                                     <td class="disappear">40%</td>
-                                    <td><button type="button" class="btn btn-warning btn-sm">Process</button></td>
+                                    <td><button type="button"
+                                            class="btn btn-warning btn-sm size-button-mq">Process</button></td>
                                     <td>
                                         <span><button type="button"
                                                 class="btn btn-success btn-sm bg-white text-black "><i
@@ -336,7 +344,8 @@
                                     </td>
                                     <td class="disappear">15 Febbraio 2021</td>
                                     <td class="disappear">20%</td>
-                                    <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                    <td><button type="button"
+                                            class="btn btn-success btn-sm size-button-mq">Done</button></td>
                                     <td>
                                         <span><button type="button"
                                                 class="btn btn-success btn-sm bg-white text-black "><i
@@ -352,7 +361,8 @@
                                     </td>
                                     <td class="disappear">15 Febbraio 2021</td>
                                     <td class="disappear">15%</td>
-                                    <td><button type="button" class="btn btn-warning btn-sm">process</button></td>
+                                    <td><button type="button"
+                                            class="btn btn-warning btn-sm size-button-mq">process</button></td>
                                     <td>
                                         <span><button type="button"
                                                 class="btn btn-success btn-sm bg-white text-black "><i
@@ -368,7 +378,8 @@
                                     </td>
                                     <td class="disappear">15 Febbraio 2021</td>
                                     <td class="disappear">20%</td>
-                                    <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                    <td><button type="button"
+                                            class="btn btn-success btn-sm size-button-mq">Done</button></td>
                                     <td>
                                         <span><button type="button"
                                                 class="btn btn-success btn-sm bg-white text-black "><i
@@ -381,7 +392,7 @@
                             </table>
                         </div>
                         <div id="faq" class="border-fran w-100 ">
-                            <div class="bg-fran border-fran-bottom" >
+                            <div class="bg-fran border-fran-bottom">
                                 <h2 class="text-black fs-2 ps-2">F.A.Q.</h2>
                             </div>
                             <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -395,7 +406,9 @@
                                     </h2>
                                     <div id="flush-collapseOne" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body fw-bold ">Si, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum inventore alias eos illo doloribus veritatis autem culpa quas, quae fugit.</div>
+                                        <div class="accordion-body fw-bold ">Si, Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Voluptatum inventore alias eos illo doloribus veritatis
+                                            autem culpa quas, quae fugit.</div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
@@ -413,7 +426,7 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-semibold "  type="button"
+                                        <button class="accordion-button collapsed fw-semibold " type="button"
                                             data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
                                             aria-expanded="false" aria-controls="flush-collapseThree">
                                             Posso usare questa dashboard da Mobile?
@@ -421,14 +434,16 @@
                                     </h2>
                                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body fw-bold ">Si, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam atque, cum repellat voluptatem quasi laborum tempora assumenda odio id temporibus.
+                                        <div class="accordion-body fw-bold ">Si, Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Aperiam atque, cum repellat voluptatem quasi laborum
+                                            tempora assumenda odio id temporibus.
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="container-main-right">
+                    <div class="container-main-right ms-2 ">
                         <div class="container-checkbox border-fran mb-5">
                             <div class=" bg-fran border-fran-bottom">
                                 <h2 class="text-black fs-2 ps-2">Todo</h2>
@@ -438,21 +453,23 @@
                                     <div class="form-check border-fran-bottom">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label " for="flexCheckDefault">
-                                          Kickoff nuove classi
+                                            Kickoff nuove classi
                                         </label>
-                                      </div>
-                                      <div class="form-check border-fran-bottom">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    </div>
+                                    <div class="form-check border-fran-bottom">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
                                         <label class="form-check-label" for="flexCheckChecked">
-                                          Lezione su Bootstrap 5 in classe #75
+                                            Lezione su Bootstrap 5 in classe #75
                                         </label>
-                                      </div>
-                                      <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
                                         <label class="form-check-label" for="flexCheckChecked">
-                                          Controllare username Github studenti
+                                            Controllare username Github studenti
                                         </label>
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -460,18 +477,18 @@
                             <div class="card w-100 ">
                                 <img src="img/stats.jpeg" class="card-img-top" alt="Stats">
                                 <div class="card-body">
-                                  <h5 class="card-title">Utenti Attivi</h5>
-                                  <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                    <h5 class="card-title">Utenti Attivi</h5>
+                                    <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">Gennaio 1200</li>
-                                  <li class="list-group-item">Febbraio 800</li>
-                                  <li class="list-group-item">Marzo 1500</li>
+                                    <li class="list-group-item">Gennaio 1200</li>
+                                    <li class="list-group-item">Febbraio 800</li>
+                                    <li class="list-group-item">Marzo 1500</li>
                                 </ul>
                                 <div class="card-body">
-                                  <a href="#" class="card-link">Visualizza report approfondito</a>
+                                    <a href="#" class="card-link">Visualizza report approfondito</a>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
         </main>
